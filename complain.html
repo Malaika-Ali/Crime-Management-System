@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Crime Complain | TCB</title>
+      <link rel="stylesheet" href="complain.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="Images/logo2.png" type="image/x-icon">
+   </head>
+   <body>
+
+      <!-- Logo -->
+      <a href="index.html" class="logo">TCB</a>
+
+      <!-- Form Container -->
+    <div class="container">
+        <div class="text">Submit Your Complain</div>
+        <form action="#">
+           <div class="form-row">
+              <div class="input-data">
+                 <input type="text" class="type" required>
+                 <div class="underline"></div>
+                 <label for="">Crime Type</label>
+              </div>
+              <div class="input-data">
+                 <input type="text" class="date" required>
+                 <div class="underline"></div>
+                 <label for="">Date of Crime</label>
+              </div>
+           </div>
+           <div class="form-row">
+              <div class="input-data">
+                 <input type="text" class="location" required>
+                 <div class="underline"></div>
+                 <label for="">Location</label>
+              </div>
+              <div class="input-data">
+                 <input type="text" class="evidence" required>
+                 <div class="underline"></div>
+                 <label for="">Evidence</label>
+              </div>
+           </div>
+           <div class="form-row">
+              <div class="input-data textarea">
+                 <textarea rows="8" cols="80" class="description" required></textarea>
+                 <br />
+                 <div class="underline"></div>
+                 <label for="">Crime Description</label>
+                 <br />
+                 <div class="form-row submit-btn">
+                    <div class="input-data">
+                       <div class="inner"></div>
+                       <input type="submit" value="submit" class="send-btn">
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </form>
+     </div>
+
+     <!-- Sweet alert -->
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   <script type="text/javascript">
+       (function () {
+           emailjs.init("jVi-Un9H4Pu2S-UuO");
+       })();
+   </script>
+   <script src="complain.js"></script>
+   </body>
+
+   
+</html>
